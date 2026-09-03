@@ -512,7 +512,8 @@ h2 em {
 .project-image {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 16 / 10;
+  /* 30/19 is the diagram's own 1200x760 ratio, so it fits with no bars */
+  aspect-ratio: 30 / 19;
   border-radius: 4px;
   transition: transform 0.3s ease;
 }
@@ -536,7 +537,7 @@ h2 em {
   background: #0b1110;
 }
 
-/* The diagram is 1200x760 — contain keeps its labels intact */
+/* Frame matches the artwork ratio, so nothing is cropped or letterboxed */
 .image-transformation img {
   object-fit: contain;
 }
