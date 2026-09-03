@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Digital transformation from monolith to cloud</title>
+  <desc id="desc">A sleek technical illustration showing a legacy monolith moving through a cloud platform into an automated release pipeline with a Last Known Good checkpoint.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17211f"/>
+      <stop offset="1" stop-color="#0b1110"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c5f36b" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#78a98c" stop-opacity=".75"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c5f36b" stop-opacity=".25"/>
+      <stop offset=".5" stop-color="#c5f36b"/>
+      <stop offset="1" stop-color="#e7f6d0"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#c5f36b" stroke-opacity=".08"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+  <path d="M0 610C190 550 275 665 430 605S720 500 860 585s235 36 340-20" fill="none" stroke="#c5f36b" stroke-opacity=".12" stroke-width="2"/>
+  <text x="72" y="76" fill="#c5f36b" font-family="monospace" font-size="16" letter-spacing="4">TRANSFORMATION / 01</text>
+  <text x="72" y="122" fill="#f4f0e6" font-family="Arial, sans-serif" font-size="34" font-weight="700">MONO TO CLOUD</text>
+  <text x="72" y="153" fill="#91a39c" font-family="Arial, sans-serif" font-size="16">A system that learns to move faster</text>
+
+  <g transform="translate(92 274)">
+    <rect x="0" y="0" width="190" height="220" rx="8" fill="#101817" stroke="#71847c" stroke-width="2"/>
+    <rect x="20" y="22" width="150" height="28" rx="4" fill="#293934"/>
+    <circle cx="36" cy="36" r="5" fill="#c5f36b"/><circle cx="54" cy="36" r="5" fill="#71847c"/><circle cx="72" cy="36" r="5" fill="#71847c"/>
+    <path d="M32 90h126M32 122h98M32 154h126M32 186h74" stroke="#52675e" stroke-width="8" stroke-linecap="round"/>
+    <text x="0" y="260" fill="#f4f0e6" font-family="monospace" font-size="15">LEGACY MONOLITH</text>
+  </g>
+
+  <g stroke="url(#route)" fill="none" stroke-width="4" filter="url(#glow)">
+    <path d="M290 384h120"/>
+    <path d="M650 384h125"/>
+    <path d="M935 384h112"/>
+  </g>
+  <g fill="#c5f36b">
+    <path d="m402 384-14-9v18z"/><path d="m786 384-14-9v18z"/><path d="m1058 384-14-9v18z"/>
+  </g>
+
+  <g transform="translate(426 258)">
+    <path d="M22 115C22 78 51 51 87 51c11-34 43-51 76-43 26 6 44 24 51 48 40-5 72 23 72 59 0 35-28 62-63 62H82c-34 0-60-27-60-62z" fill="url(#cloud)" opacity=".9"/>
+    <path d="M69 113h128M101 145h94" stroke="#17211f" stroke-opacity=".55" stroke-width="9" stroke-linecap="round"/>
+    <text x="35" y="215" fill="#f4f0e6" font-family="monospace" font-size="15">CLOUD PLATFORM</text>
+  </g>
+
+  <g transform="translate(785 258)">
+    <rect x="0" y="0" width="156" height="64" rx="8" fill="#1e2c28" stroke="#c5f36b" stroke-opacity=".7"/>
+    <rect x="0" y="78" width="156" height="64" rx="8" fill="#1e2c28" stroke="#c5f36b" stroke-opacity=".7"/>
+    <rect x="0" y="156" width="156" height="64" rx="8" fill="#1e2c28" stroke="#c5f36b" stroke-opacity=".7"/>
+    <circle cx="26" cy="32" r="9" fill="#c5f36b"/><circle cx="26" cy="110" r="9" fill="#c5f36b"/><circle cx="26" cy="188" r="9" fill="#c5f36b"/>
+    <path d="m22 32 4 4 8-10M22 110l4 4 8-10M22 188l4 4 8-10" fill="none" stroke="#17211f" stroke-width="3"/>
+    <text x="48" y="38" fill="#f4f0e6" font-family="monospace" font-size="13">CI / CD</text>
+    <text x="48" y="116" fill="#f4f0e6" font-family="monospace" font-size="13">TOOLS</text>
+    <text x="48" y="194" fill="#f4f0e6" font-family="monospace" font-size="13">AUTOMATION</text>
+    <text x="0" y="260" fill="#f4f0e6" font-family="monospace" font-size="15">RELEASE LOOP</text>
+  </g>
+
+  <g transform="translate(1048 340)">
+    <circle cx="45" cy="45" r="42" fill="#c5f36b"/>
+    <path d="m24 46 14 14 28-33" fill="none" stroke="#17211f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="-15" y="112" fill="#f4f0e6" font-family="monospace" font-size="13">LAST KNOWN GOOD</text>
+  </g>
+
+  <g transform="translate(74 650)">
+    <circle cx="9" cy="9" r="5" fill="#c5f36b"/><text x="26" y="14" fill="#91a39c" font-family="monospace" font-size="13">REPEATABLE</text>
+    <circle cx="166" cy="9" r="5" fill="#c5f36b"/><text x="183" y="14" fill="#91a39c" font-family="monospace" font-size="13">OBSERVABLE</text>
+    <circle cx="323" cy="9" r="5" fill="#c5f36b"/><text x="340" y="14" fill="#91a39c" font-family="monospace" font-size="13">REVERSIBLE</text>
+  </g>
+</svg>
