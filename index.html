@@ -61,10 +61,14 @@
         <div class="section-wrap signal-inner">
           <span>Currently exploring</span>
           <div class="marquee">
-            <!-- The list is duplicated so the -50% scroll loops seamlessly -->
             <div class="marquee-track">
-              <b>PRODUCT</b><i>✳</i><b>ENGINEERING</b><i>✳</i><b>TECHNOLOGY LEADERSHIP</b><i>✳</i><b>DISRUPTIVE INNOVATIONS</b><i>✳</i>
-              <b aria-hidden="true">PRODUCT</b><i aria-hidden="true">✳</i><b aria-hidden="true">ENGINEERING</b><i aria-hidden="true">✳</i><b aria-hidden="true">TECHNOLOGY LEADERSHIP</b><i aria-hidden="true">✳</i><b aria-hidden="true">DISRUPTIVE INNOVATIONS</b><i aria-hidden="true">✳</i>
+              <div class="marquee-group">
+                <b>PRODUCT</b><i>✳</i><b>ENGINEERING</b><i>✳</i><b>TECHNOLOGY LEADERSHIP</b><i>✳</i><b>DISRUPTIVE INNOVATIONS</b><i>✳</i>
+              </div>
+              <!-- Duplicate copy so the -50% scroll loops without a seam -->
+              <div class="marquee-group" aria-hidden="true">
+                <b>PRODUCT</b><i>✳</i><b>ENGINEERING</b><i>✳</i><b>TECHNOLOGY LEADERSHIP</b><i>✳</i><b>DISRUPTIVE INNOVATIONS</b><i>✳</i>
+              </div>
             </div>
           </div>
         </div>

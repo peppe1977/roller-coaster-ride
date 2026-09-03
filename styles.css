@@ -428,12 +428,20 @@ h2 em {
 
 .marquee-track {
   display: flex;
-  align-items: center;
-  gap: clamp(18px, 3vw, 32px);
   width: max-content;
   font: 600 clamp(11px, 1.6vw, 13px) var(--display);
   letter-spacing: 0.1em;
+  will-change: transform;
   animation: marquee-scroll 26s linear infinite;
+}
+
+/* Trailing padding matches the gap, so each group is exactly half the
+   track and the -50% wrap lands on an identical frame */
+.marquee-group {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 3vw, 32px);
+  padding-right: clamp(18px, 3vw, 32px);
 }
 
 .marquee-track i {
@@ -443,6 +451,10 @@ h2 em {
 }
 
 @keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+
   to {
     transform: translateX(-50%);
   }
