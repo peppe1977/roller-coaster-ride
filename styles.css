@@ -11,6 +11,17 @@
   --display: "Space Grotesk", sans-serif;
 }
 
+.image-transformation {
+  background: #0b1110;
+}
+
+.image-transformation img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* ============================================
    RESET & BASE STYLES
    ============================================ */
